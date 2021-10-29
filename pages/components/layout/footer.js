@@ -1,4 +1,3 @@
-import Button from '../button'
 import Paragraph from '../paragraph'
 import Title from '../title'
 import Image from 'next/image'
