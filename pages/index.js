@@ -49,7 +49,7 @@ export default function Home() {
       <div className="w-full mt-20 pt-6 px-4 sm:px-6 lg:px-28 flex justify-center flex-col space-x-0 md:space-x-5 p-8">
         <Title dark label="New Products" weight="bold" align="center" />
         <Paragraph dark label="New innovation, best quality than before. Make every moment flying operation become unforgettable." weight="light" align="center" />
-        <div className="flex mt-10 flex-col md:flex-row space-x-0 space-y-10 md:space-x-20 md:space-y-0">
+        <div className="flex mt-10 flex-col justify-center md:flex-row space-x-0 space-y-10 md:space-x-20 md:space-y-0">
           <ProductCard img="/img/product1.png" title="Mini Drone" subtitle="Powerful camera drone at an affordable price range. Camera up to 4K resolution, optimize shots automatically." />
           <ProductCard img="/img/product2.png" title="Drone Light" subtitle="Drone light is every creators dream. Setting apperture manually and high battery  performance. Drone light is everything you need." />
           <ProductCard img="/img/product1.png" title="Mini Drone" subtitle="Powerful camera drone at an affordable price range. Camera up to 4K resolution, optimize shots automatically." />
@@ -59,7 +59,7 @@ export default function Home() {
       {/* TESTIMONIES SECTION */}
       <div className="w-full mt-20 pt-6 px-4 sm:px-6 lg:px-28 flex justify-center flex-col space-x-0 md:space-x-5 p-8">
         <Title dark label="What Our “Pilots Are Saying" className="text-4xl md:text-5xl md:w-2/5" weight="bold" align="left" />
-        <div className="w-full flex flex-col mt-10 md:flex-row space-x-0 space-y-10 md:space-x-20 md:space-y-0">
+        <div className="w-full flex justify-center flex-col mt-10 md:flex-row space-x-0 space-y-10 md:space-x-20 md:space-y-0">
           <TestimonyCard name="Hugo Adams" job="Content Creator" subtitle="With high resolution camera, picture become clear and beautiful. It’s so easy to operate drone." img="/img/profile1.png" />
           <TestimonyCard name="Jennie Obrien" job="Director File" subtitle="Taking high view video become easy and faster. Battery performance really helping for making film." img="/img/profile2.png" />
           <TestimonyCard name="Lisa Millz" job="Content WQCreator" subtitle="Making video content for my trip vlog so powerful and wonderful. Love the video quality." img="/img/profile3.png" />

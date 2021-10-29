@@ -1,13 +1,14 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, SearchIcon, XIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
 import Image from 'next/image'
 import logoImage from '../../../public/img/logo.png'
 
 const navigation = [
-  { name: 'Home', href: '#' },
+  { name: 'Home', href: '/' },
   { name: 'Gallery', href: '#' },
-  { name: 'Products', href: '#' },
+  { name: 'Products', href: 'product' },
   { name: 'Review', href: '#' },
   { name: 'Support', href: '#' },
 ]
@@ -16,7 +17,7 @@ export default function Nav() {
   return (
     <div className="relative z-10 bg-black">
       <Popover>
-        <div className="w-full relative pt-6 px-4 sm:px-6 lg:px-8">
+        <div className="w-full relative py-6 px-4 sm:px-6 lg:px-8">
           <nav className="flex items-center justify-center sm:h-10 lg:justify-center" aria-label="Global">
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div className="flex items-center justify-between w-full md:w-auto">
@@ -35,9 +36,11 @@ export default function Nav() {
             </div>
             <div className="hidden md:block md:ml-28 md:pr-28 md:space-x-16">
               {navigation.map((item) => (
-                <a key={item.name} href={item.href} className="font-medium text-gray-50 hover:text-gray-100">
+                <Link href={item.href} >
+                <a key={item.name} className="font-medium text-gray-50 hover:text-gray-100">
                   {item.name}
                 </a>
+                </Link>
               ))}
             </div>
             <div className="md:flex hidden items-center flex-grow flex-shrink-0 lg:flex-grow-0">
@@ -82,13 +85,14 @@ export default function Nav() {
               </div>
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => (
+                <Link href={item.href} >
                   <a
                     key={item.name}
-                    href={item.href}
                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-50 hover:text-gray-100 hover:bg-gray-900"
                   >
                     {item.name}
                   </a>
+                  </Link>
                 ))}
               </div>
             </div>
